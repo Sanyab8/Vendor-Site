@@ -1,0 +1,213 @@
+/* Reset & base */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  /* Center all headings site‑wide */
+  h1, h2, h3, h4, h5, h6,\ {
+    text-align: center;
+  }
+  
+  body {
+    font-family: 'Segoe UI', Tahoma, sans-serif;
+    line-height: 1.6;
+    color: #333;
+    min-height: 100vh;
+  }
+  
+  /* Semi‑opaque overlay for readability */
+  .overlay {
+    background-color: rgba(255,255,255,0.85);
+    min-height: 100vh;
+    padding-bottom: 2rem;
+  }
+  
+  /* Header */
+  header {
+    padding: 4rem 1rem 2rem;
+    color: rgb(0, 0, 0);
+    position: relative;
+  }
+  header::after {
+    content: '';
+    position: absolute;
+    top: 0; left: 0; right: 0; bottom: 0;
+  }
+  header h1 {
+    position: relative;
+    font-size: 3rem;
+    z-index: 1;
+  }
+  header p {
+    position: relative;
+    font-size: 1.2rem;
+    margin-top: 0.5rem;
+    z-index: 1;
+  }
+  
+  /* Navigation */
+  nav {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 0.75rem;
+    margin: 2rem 0;
+  }
+  .nav-btn {
+    padding: 0.75rem 1.5rem;
+    background-color: #ff6f61;
+    color: white;
+    text-decoration: none;
+    border-radius: 30px;
+    font-weight: 600;
+    transition: background-color 0.3s;
+  }
+  .nav-btn:hover {
+    background-color: #e85b50;
+  }
+  .suggest-btn {
+    background-color: #4caf50;
+  }
+  .suggest-btn:hover {
+    background-color: #3e8e41;
+  }
+  
+  /* Content sections as cards */
+  section {
+    background: white;
+    border-radius: 8px;
+    max-width: 700px;
+    margin: 1.5rem auto;
+    padding: 2rem;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  }
+  section h2 {
+    margin-bottom: 1rem;
+    color: #444;
+  }
+  
+  /* Vendor list */
+  ul {
+    list-style: none;
+  }
+  ul li {
+    margin: 0.75rem 0;
+    font-size: 1.1rem;
+  }
+  ul li a {
+    color: #ff6f61;
+    text-decoration: none;
+  }
+  ul li a:hover {
+    text-decoration: underline;
+  }
+  
+  /* Form styling */
+  form label {
+    display: block;
+    margin-bottom: 0.5rem;
+    font-weight: 500;
+  }
+  form input,
+  form textarea {
+    width: 100%;
+    padding: 0.75rem;
+    margin-bottom: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 1rem;
+  }
+  form button {
+    padding: 0.75rem 1.5rem;
+    border: none;
+    border-radius: 30px;
+    font-size: 1rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  form button:not(.suggest-btn) {
+    background-color: #4caf50;
+    color: white;
+  }
+  form button:not(.suggest-btn):hover {
+    background-color: #3e8e41;
+  }
+  form button.suggest-btn {
+    background-color: #4caf50;
+    color: white;
+  }
+  form button.suggest-btn:hover {
+    background-color: #3e8e41;
+  }
+  
+  /* Back link */
+.back-link {
+    display: block;
+    text-align: center;
+    margin-top: 1.5rem;
+    color: #555;
+  }
+  .back-link:hover {
+    text-decoration: underline;
+  }
+  /* Page‑specific tweaks for index.html */
+body.index-page header {
+    padding-top: 1rem;    /* push header content down */
+  }
+  
+  body.index-page .hero-image {
+    display: block;
+    max-width: 720px;
+    width: 100%;
+    margin: 2rem auto 1rem; /* space above & below */
+  }
+
+  /* Remove grey overlay behind header on index.html */
+body.index-page .overlay {
+    background-color: transparent;
+  }
+  body.index-page .hero-image {
+    max-width: 400px;
+    width: 80%;
+    margin: 2rem auto 1rem;
+    display: block;
+  }
+
+  .menu-items {
+    margin-top: 0.5rem;
+    margin-left: 1.5rem;
+    list-style: disc;
+    padding-left: 1rem;
+  }
+  .menu-items li {
+    font-size: 1rem;
+    color: #555;
+  }
+
+  /* Footer styling */
+footer {
+    background: #222;
+    color: #eee;
+    padding: 2rem 1rem;
+  }
+  
+  footer div {
+    max-width: 700px;      /* match your content width */
+    margin: 0 auto;        /* center */
+    text-align: center;
+    font-size: 0.9rem;
+  }
+  
+  footer a {
+    color: #4caf50;
+    text-decoration: none;
+    margin: 0 .5rem;
+  }
+  
+  footer a:hover {
+    text-decoration: underline;
+  }
+  

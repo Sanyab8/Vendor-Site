@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Suggest a Cuisine — Campus CulturEats</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <h1>Suggest a New Cuisine</h1>
+
+  <section>
+    <h2>Don’t see your favorite?</h2>
+    <p>Let us know what cuisine (and vendors!) you’d like to see on campus.</p>
+  </section>
+
+  <section>
+    <h2>Submit Your Suggestion</h2>
+    <!-- Suggestion Form -->
+    <form action="https://formspree.io/f/xnnpwnqv" method="POST">
+      <!-- Hidden field to identify this as a suggestion -->
+      <input type="hidden" name="type" value="suggestion">
+
+      <label>
+        Your email (optional):
+        <input type="email" name="email" placeholder="you@school.edu">
+      </label>
+
+      <label>
+        Cuisine name:
+        <input type="text" name="cuisine" required placeholder="E.g., Thai">
+      </label>
+
+      <label>
+        Vendor name & website:
+        <textarea name="vendors" required placeholder="E.g., 'Spice House – spicehouse.com', one per line"></textarea>
+      </label>
+
+      <button type="submit">Submit Suggestion</button>
+    </form>
+  </section>
+
+  <a href="index.html" class="back-link">← Back to menu</a>
+</body>
+  <!-- Footer -->
+  <footer style="background:#222; color:#eee; padding:2rem 1rem; text-align:center; font-size:0.9rem;">
+    <div style="max-width:800px; margin:0 auto;">
+      <p><strong>Campus CulturEats, Inc.</strong></p>
+      <p>UC Santa Cruz • 1156 High Street • Santa Cruz, CA 95064</p>
+      <p>Email: info@campuscultureeats.com • Phone: (831) 555‑1234</p>
+      <p>
+        <a href="#" style="color:#4caf50; text-decoration:none; margin:0 .5rem;">Privacy Policy</a> |
+        <a href="#" style="color:#4caf50; text-decoration:none; margin:0 .5rem;">Terms of Service</a> |
+        <a href="#" style="color:#4caf50; text-decoration:none; margin:0 .5rem;">Contact Us</a>
+      </p>
+      <p style="margin-top:1rem;">&copy; 2025 Campus CulturEats, Inc. All rights reserved.</p>
+    </div>
+  </footer>
+</html>
